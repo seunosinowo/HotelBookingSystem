@@ -1,13 +1,20 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Create from './components/Create';
+import Details from './components/Details';
+import NotFound from './components/NotFound';
+import Card from './components/Card';
 
 
 function App() {
   return (
     <>
-    <Route>
+    <Routes>
       <Route path='/create' element={<Create/>} />
-    </Route>
+      <Route path='/id' element={<Details/>} />
+      <Route path='/' element={<NotFound/>} />
+      <Route path='/' element={<Card/>} />
+    </Routes>
     </>
   );
 }
