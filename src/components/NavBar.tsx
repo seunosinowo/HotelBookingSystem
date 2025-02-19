@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Links } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
@@ -7,13 +7,13 @@ function NavBar() {
         <h1>Dashboard</h1>
 
         <div className="links">
-            <Link to = '/' style={{
+            <Link to = '/dd' style={{
                 color: 'rgb(77, 77, 77)'
             }} >
                 All Hotels
             </Link>
 
-            <Link to = '/create'
+            <Link to = '/dd'
                 style = {{
                 color: 'white',
                 backgroundColor: 'rgb(77, 77, 77)',

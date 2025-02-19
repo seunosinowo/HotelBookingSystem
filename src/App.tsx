@@ -11,8 +11,8 @@ function App() {
     <>
     <Routes>
       <Route path='/create' element={<Create/>} />
-      <Route path='/id' element={<Details/>} />
-      <Route path='/' element={<NotFound/>} />
+      <Route path='/details' element={<Details/>} />
+      <Route path='*' element={<NotFound/>} />
       <Route path='/' element={<Card/>} />
     </Routes>
     </>
